@@ -7,7 +7,7 @@ fn main()
 {
     println!("本程序用来可以简单的混淆或去混淆文件头、尾，从而防止自动文件检查等情况");
     println!("本程序将读取当前文件路径下的以.zip/rar/7z结尾的文件并处理，请确保该程序与目的压缩包在同一路径下");
-
+    println!("项目地址为：https://github.com/wuxinoob/mixter");
     select_option_go_on();
     let mut file_vec = get_wanted_dir_file();
     if file_vec.len() == 0 {println!("当前目录下没有.zip/rar/7z压缩文件，请确认路径是否正确");pause();exit(0)}
