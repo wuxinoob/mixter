@@ -1,0 +1,19 @@
+[package]
+name = "greeting"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[profile.release-lto]
+inherits = "release"
+debug = 0
+opt-level = 3
+split-debuginfo = '...'  # Platform-specific.
+debug-assertions = false
+overflow-checks = false
+lto = false
+panic = 'unwind'
+incremental = false
+codegen-units = 16
+rpath = false
