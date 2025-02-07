@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::process::exit;
-use greeting::control_blk::*;
-use greeting::encrypt_hex::{get_fd, get_wanted_dir_file};
+use mixter::control_blk::*;
+use mixter::encrypt_hex::{get_fd, get_wanted_dir_file};
 
 fn main()
 {
